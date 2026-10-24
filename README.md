@@ -6,7 +6,7 @@ Yo what's up? That is my minimalistic hyprland conf in kinda cosmic colors for N
 
 # SETUP
 I use this:
-- OS: NixOS (Maaybe laater i do repo for it}
+- OS: NixOS (Maaybe laater i do repo for it)
 - WM: Hyprlnd
 - Terminal: Kitty
 - Bar: Waybar
