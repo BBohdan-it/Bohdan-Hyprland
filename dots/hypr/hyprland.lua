@@ -20,13 +20,6 @@ hl.monitor({
 	scale = "1",
 })
 
-hl.monitor({
-	output = "HEADLESS-1",
-	mode = "1200x900@60",
-	position = "auto-left",
-	scale = "1",
-})
-
 -------------------
 ---- AUTOSTART ----
 -------------------
@@ -34,8 +27,6 @@ hl.monitor({
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar & awww-daemon")
 	hl.exec_cmd("awww img ~/Documents/Wallpaper/QuasarWallpaper.png")
-	hl.exec_cmd("hyprctl output create headless")
-	hl.exec_cmd("wayvnc -o HEADLESS-1 0.0.0.0 5900")
 	hl.exec_cmd("swaync")
 end)
 
