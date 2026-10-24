@@ -6,7 +6,7 @@ Yo what's up? That is my minimalistic hyprland conf in kinda cosmic colors for N
 
 # SETUP
 I use this:
-- OS: NixOS
+- OS: NixOS (Maaybe laater i do repo for it}
 - WM: Hyprlnd
 - Terminal: Kitty
 - Bar: Waybar
@@ -16,6 +16,8 @@ I use this:
 - File Manager: Yazi
 - Wallpaper app: Awww (swww)
 - Greater: SDDM
+- Browser: Helium
+- For screenshots: Hyprshot
 
 # INSTALATION
 Just clone my dots
