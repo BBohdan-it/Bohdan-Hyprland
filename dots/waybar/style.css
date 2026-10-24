@@ -1,0 +1,51 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(15, 20, 30, 0.75); /* Глибокий синій з прозорістю */
+    color: #cdd6f4;
+    border-radius: 12px;
+    border: 1px solid rgba(137, 180, 250, 0.2); /* Тонка блакитна рамка */
+}
+
+/* Логотип Arch */
+#custom-nix {
+    color: #89b4fa; /* Блакитний колір Arch */
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+/* Робочі столи */
+#workspaces button {
+    padding: 0 8px;
+    color: rgba(205, 214, 244, 0.4);
+}
+
+#workspaces button.active {
+    color: #89b4fa;
+    background: rgba(137, 180, 250, 0.1);
+    border-bottom: 2px solid #89b4fa;
+}
+
+/* Годинник */
+#clock {
+    color: #cdd6f4;
+    font-weight: bold;
+}
+
+/* Кнопка вимкнення */
+#custom-power {
+    color: #f38ba8; /* М'який червоний */
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+/* Інші модулі */
+#pulseaudio, #network, #battery {
+    padding: 0 10px;
+}
