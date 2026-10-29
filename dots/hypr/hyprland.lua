@@ -97,36 +97,25 @@ hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1.0
 hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 
 hl.animation({
-	leaf = "global",
-	enabled = true,
-	speed = 10,
-	bezier = "default",
-})
-hl.animation({
-	leaf = "border",
-	enabled = true,
-	speed = 5.39,
-	bezier = "easeOutQuint",
-})
-hl.animation({
 	leaf = "windows",
 	enabled = true,
-	speed = 4.79,
-	bezier = "easeOutQuint",
+	speed = 2.0,
+	bezier = "linear",
+	style = "popin 85%",
 })
 hl.animation({
 	leaf = "windowsIn",
 	enabled = true,
-	speed = 4.1,
-	bezier = "easeOutQuint",
-	style = "popin 87%",
+	speed = 1.5,
+	bezier = "linear",
+	style = "popin 75%",
 })
 hl.animation({
 	leaf = "windowsOut",
 	enabled = true,
-	speed = 1.49,
+	speed = 3.0,
 	bezier = "linear",
-	style = "popin 87%",
+	style = "popin",
 })
 hl.animation({
 	leaf = "fadeIn",
@@ -181,23 +170,9 @@ hl.animation({
 hl.animation({
 	leaf = "workspaces",
 	enabled = true,
-	speed = 1.94,
+	speed = 3,
 	bezier = "almostLinear",
-	style = "fade",
-})
-hl.animation({
-	leaf = "workspacesIn",
-	enabled = true,
-	speed = 1.21,
-	bezier = "almostLinear",
-	style = "fade",
-})
-hl.animation({
-	leaf = "workspacesOut",
-	enabled = true,
-	speed = 1.94,
-	bezier = "almostLinear",
-	style = "fade",
+	style = "slidefade",
 })
 hl.animation({
 	leaf = "windows",
@@ -264,6 +239,13 @@ for i = 1, 10 do
 	hl.bind(mainMod .. " + " .. key, hl.dsp.focus({ workspace = i }))
 	hl.bind(mainMod .. " + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 end
+
+-- MOVE WINDOWS --
+
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.swap({ direction = "l" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.swap({ direction = "d" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.swap({ direction = "u" }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.swap({ direction = "r" }))
 
 -- VOLUME CONTROL --
 
